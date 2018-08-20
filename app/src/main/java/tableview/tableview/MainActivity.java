@@ -12,21 +12,23 @@ public class MainActivity extends AppCompatActivity {
     private TableLayout tableheader;
     private TableLayout tablecontent;
     private TableView tableView;
-    private String[] mlistHead={"日期","类型","金额","操作"};
+    private String[] mlistHead={"id","姓名","学号","性别"};
+    private String[] mlistContent={"1","黄林晴","2014211617","男"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
-        tableView.setTable(6, 4, new OnTableClick() {
+        tableView.setTable(new OnTableClick() {
             @Override
             public void onTableClickListener(int row, int col) {
 
             }
         });
         tableView.setTableHead(mlistHead);
-        tableView.setTableContent();
+        tableView.setTableContent(mlistContent);
 
     }
 
