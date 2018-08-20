@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/viewheader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="测试"
+        android:textColor="#ffffff" />
+
+    <TableLayout
+        android:id="@+id/table_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TableLayout>
+
+    <TableLayout
+        android:id="@+id/table_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TableLayout>
+
+</LinearLayout>
